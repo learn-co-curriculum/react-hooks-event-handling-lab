@@ -1,8 +1,16 @@
 // Code Keypad Component Here
 
-function Keypad (){
+function Keypad (props){
+    const handleInput = () => {
+        console.log('Entering password...');
+    }
     return (
-        <div></div>
+        <div>
+           <input onChange={handleInput}
+            type = "password"
+
+           />
+        </div>
     )
 }
 
